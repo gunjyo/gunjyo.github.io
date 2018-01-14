@@ -19,3 +19,12 @@ var fn=this.fn||{};
   } 
    return r;
  };
+fn.rkana=(l=8)=>{
+  var c = "abcdefghijklmnopqrstuvwxyz",cl=c.length;
+  var b = "aiueo",bl=b.length;
+  var r="";
+  for(var i=0;i<l;i++){
+   r+=(i%2)? b[Math.floor(Math.random()*bl)]:c[Math.floor(Math.random()*cl)];
+  }
+  return r;   
+ }
